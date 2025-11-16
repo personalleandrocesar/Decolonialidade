@@ -1,21 +1,12 @@
 <script setup>
-  import { mySwiper } from "https://unpkg.com/swiper/swiper-bundle.min.js";
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 5,
-        spaceBetween: 15,
-        slidesPerGroup: 5,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+useHead({
+  title: 'Decolonialidade',
+  meta: [
+    { name: 'description', content: 'Sociologia, numa perspectiva de Modernidade e Colonialidade' },
+  ],
+})
+</script>
+
 <template>
   <div>
     <header>
@@ -29,12 +20,12 @@
                     <p>Decolonialidade</p>
                 </div>
                 <div class="icon">
-                    <a href="Login.html"> 
+                    <NuxtLink to="/login"> 
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fffbeeff" class="bi bi-person-circle" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                         </svg>
-                    </a>
+                    </NuxtLink>
                 </div>
         </div>
         <div class="header-down">
@@ -44,7 +35,7 @@
                 <div class="vert-bar"></div>
                 <p> <a href="">Materiais</a></p>
                 <div class="vert-bar"></div>
-                <p><a href="">Artigos</a></p>
+                <p><a href="">Blog</a></p>
             </div>
         </div>
     </header>
@@ -226,21 +217,6 @@
                     </div>
                 </div>
 
-                <div class="membro-card swiper-slide">
-                    <div class="membro-img">
-                        <img src="/img/ricardo.webp" alt="">
-                    </div>
-
-                    <div class="membro-cont">
-                        <div class="membro-nome h5">
-                            George Luiz de Abreu Vidipó
-                        </div>
-                        <div class="membro-desc">
-                            Licenciado em História pelo Centro Universitário Augusto Motta.
-                        </div>
-                    </div>
-                    
-                </div>
             </div>
             <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
